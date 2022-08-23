@@ -35,3 +35,7 @@ jobs:
           python -c "from transformers import pipeline; print(pipeline('sentiment-analysis')('we love you'))",
           python -c "from datasets import load_dataset; print(load_dataset('squad', split='train')[0])"
 
+      #Run the traain script to fine tune, lets see if it would work
+      - name: Run train script distilbert_text.py in text_calssification module
+        run: |
+          python text_classification/distilbert_text.py
