@@ -1,2 +1,6 @@
+torch
+torchvision
+torchaudio
+
 transformers
 huggingface_hub
