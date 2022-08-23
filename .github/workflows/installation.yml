@@ -33,4 +33,5 @@ jobs:
       - name: Run a multi-line script
         run: |
           python -c "from transformers import pipeline; print(pipeline('sentiment-analysis')('we love you'))",
-          echo test, and deploy your project.
+          python -c "from datasets import load_dataset; print(load_dataset('squad', split='train')[0])"
+
